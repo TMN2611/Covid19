@@ -170,3 +170,11 @@ body {
     rgba(255, 241, 241, 0) 108.69%
   );
 }
+@media screen and (max-width: 767.98px) {
+  .heading {
+    font-size: 40px;
+  }
+  .sub-heading {
+    font-size: 25px;
+  }
+}
