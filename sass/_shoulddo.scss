@@ -1,0 +1,95 @@
+.shoulddo {
+  position: relative;
+
+  &-deco1,
+  &-deco2 {
+    position: absolute;
+  }
+  &-deco1 {
+    top: 540px;
+    width: 227px;
+    right: calc(100% - 102px);
+  }
+  &-deco2 {
+    // width: 227px;
+    bottom: 0;
+    left: 100%;
+    transform: translate(-50%, -199px);
+    width: 315px;
+  }
+  &-list {
+    padding-top: 71.2px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-item {
+    background-color: white;
+
+    max-width: 1352.65px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    &--main {
+      display: flex;
+      gap: 40px;
+    }
+    &--content {
+      max-width: 532px;
+    }
+  }
+  &-heading {
+    font-size: 47px;
+  }
+  &-number {
+    min-width: 75px;
+    max-width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100rem;
+    background-color: #fee6e5;
+    span {
+      font-family: $secondary-font, sans-serif;
+      color: $primary-color;
+      font-weight: 700;
+      font-size: 44px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &-reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .shoulddo-item {
+    gap: 0 30px;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .shoulddo {
+    padding-bottom: 80px;
+  }
+  .shoulddo-item {
+    gap: 0;
+  }
+  .shoulddo-item--main {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .shoulddo-list {
+    gap: 70px 0;
+  }
+  .shoulddo-item {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .shoulddo-item--main {
+    flex-direction: column;
+    align-items: center;
+  }
+}

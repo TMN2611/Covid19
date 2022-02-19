@@ -1,0 +1,79 @@
+.contagion {
+  padding-bottom: 148px;
+  &-content {
+    max-width: 716px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 111px;
+  }
+  &-img {
+    max-width: 1167px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 100%;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 30px;
+    position: relative;
+  }
+  &-item {
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+    background-color: white;
+    border-radius: 10px;
+    padding: 65px 52px 78px;
+    text-align: center;
+    z-index: 2;
+
+    &--heading {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 52.92px;
+      color: $heading-color;
+      margin-bottom: 21px;
+    }
+    &--img {
+      max-width: 269.5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 55px;
+    }
+  }
+  &-virus {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-60%);
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .contagion-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .contagion {
+    padding-bottom: 50px;
+  }
+  .contagion-item {
+    padding: 45px 32px 58px;
+  }
+  .contagion-content {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .contagion-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .contagion-content {
+    padding-bottom: 0px;
+  }
+}

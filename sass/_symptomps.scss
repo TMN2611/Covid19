@@ -1,0 +1,37 @@
+.symptomps {
+  padding-bottom: 117.66px;
+  &-content {
+    max-width: 716px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-img {
+    max-width: 1167px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  &-deco {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &1 {
+      right: calc(100% + 116.6px);
+      max-width: 129.2px;
+    }
+    &2 {
+      left: calc(100% + 98.42px);
+
+      max-width: 220.36px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .symptomps {
+    padding-bottom: 50px;
+  }
+}

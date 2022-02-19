@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'Gelion';
+  src: url('../fonts/Gelion-Bold.eot');
+  src: url('../fonts/Gelion-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gelion-Bold.woff2') format('woff2'),
+    url('../fonts/Gelion-Bold.woff') format('woff'),
+    url('../fonts/Gelion-Bold.ttf') format('truetype'),
+    url('../fonts/Gelion-Bold.svg#Gelion-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('../fonts/Gelion-Medium.eot');
+  src: url('../fonts/Gelion-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gelion-Medium.woff2') format('woff2'),
+    url('../fonts/Gelion-Medium.woff') format('woff'),
+    url('../fonts/Gelion-Medium.ttf') format('truetype'),
+    url('../fonts/Gelion-Medium.svg#Gelion-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('../fonts/Gelion-Regular.eot');
+  src: url('../fonts/Gelion-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gelion-Regular.woff2') format('woff2'),
+    url('../fonts/Gelion-Regular.woff') format('woff'),
+    url('../fonts/Gelion-Regular.ttf') format('truetype'),
+    url('../fonts/Gelion-Regular.svg#Gelion-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gelion Semi';
+  src: url('../fonts/Gelion-SemiBold.eot');
+  src: url('../fonts/Gelion-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gelion-SemiBold.woff2') format('woff2'),
+    url('../fonts/Gelion-SemiBold.woff') format('woff'),
+    url('../fonts/Gelion-SemiBold.ttf') format('truetype'),
+    url('../fonts/Gelion-SemiBold.svg#Gelion-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+  color: $text-color;
+  font-family: $primary-font, sans-serif;
+  background-color: $background-color;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container {
+  max-width: 1473px;
+  padding: 15px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+.button {
+  border-radius: 65px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.button--fill {
+  background-color: $primary-color;
+  color: white;
+}
+.button--outline {
+  color: $primary-color;
+  border: 2px solid;
+}
+.button--overlay {
+  position: relative;
+  overflow: hidden;
+  color: $primary-color;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: $primary-color;
+    opacity: 0.15;
+  }
+}
+.button--small {
+  padding: 16px 45px 17px;
+  border-radius: 46px;
+  font-weight: 500;
+}
+.button--medium {
+  padding: 21px 49px 23px 57px;
+  font-weight: 600;
+}
+.button--large {
+  padding: 24px 57px 28px 66px;
+  font-weight: 700;
+  min-width: 250px;
+}
+
+.heading {
+  color: $heading-color;
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 72px;
+  text-transform: capitalize;
+  margin-bottom: 29px;
+}
+.sub-heading {
+  color: $primary-color;
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.desc {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45.6px;
+  margin-bottom: 54px;
+}
+
+.heading-small {
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.sub-heading-small {
+  font-size: 29px;
+  line-height: 36px;
+}
+.desc-small {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2.15;
+  text-transform: capitalize;
+}
+.desc-suppersmall {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38.7px;
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.boxed {
+  text-align: center;
+}
+.reportToEnd {
+  background: linear-gradient(
+    360deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
+}
